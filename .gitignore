@@ -1,0 +1,36 @@
+# Виртуальное окружение
+venv/
+env/
+.venv/
+
+# Кэш Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyCharm
+.idea/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+.idea/dataSources.ids
+.idea/dataSources.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
+.idea/inspectionProfiles/
+
+# Логи и базы данных
+*.log
+*.sqlite3
+*.db
+
+# Файлы окружения (никогда не коммитьте!)
+.env
+.secret
+
+# Прочее
+.DS_Store
+Thumbs.db
