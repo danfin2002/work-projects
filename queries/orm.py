@@ -2,13 +2,13 @@ from database import sync_engine, async_engine, sync_session_factory, async_sess
 from models import PersonsOrm
 from datetime import date
 #from sqlalchemy import MetaData
-
-def create_tables()->None:
+#Её нужно будет создать раз через миграции
+def create_tables()->None: #Миграции - старую удалять и создавать новую неправильно
 	sync_engine.echo=False
 	Base.metadata.drop_all(sync_engine)
 	Base.metadata.create_all(sync_engine)
 	sync_engine.echo=True
-	
+
 	
 def insert_data_sync():
 	person_daniel = PersonsOrm(name="Daniel", birthday=date(2002, 11, 19), city="Ryazan")
