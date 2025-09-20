@@ -11,3 +11,9 @@ class PersonsOrm(Base):
 	name: Mapped[str]
 	birthday: Mapped[date]# = mapped_column(Date)
 	city: Mapped[str]
+
+class DogsOrm(Base):
+	__tablename__ = "dogs"
+
+	id: Mapped[int] = mapped_column(primary_key=True)
+	name: Mapped[str]
